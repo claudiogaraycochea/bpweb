@@ -1,5 +1,6 @@
 {
     "prettier.useTabs": true,
     "editor.tabSize": 2,
-    "editor.detectIndentation": false
+    "editor.detectIndentation": false,
+    "javascript.validate.enable": false
 }

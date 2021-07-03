@@ -1,9 +1,11 @@
 import React from 'react';
 
-function PrivateLayout() {
+function Header() {
   return (
     <div className="private-layout">
-      Private layout
+      Header
     </div>
   );
 }
+
+export default Header
