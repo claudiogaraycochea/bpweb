@@ -1,0 +1,9 @@
+.container {
+  border: 1px solid blue;
+  min-height: calc(100vh - 60px);
+  overflow: auto;
+  margin-top: 60px;
+}
+.container-fluid {
+  margin-top: 60px;
+}

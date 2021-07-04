@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  background-color: #ffffff;
+  justify-content: space-between;
+  padding: 10px 40px;
+  height: 60px;
+  position: fixed;
+}
+
+.header .logo {
+  background-image: url('../../assets/img/logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 108px;
+  height: 28px;
+}
+
+.header .menu {
+  display: flex;
+  align-items: center;
+}
+
+.header .menu .item {
+  margin-left: 30px;
+}

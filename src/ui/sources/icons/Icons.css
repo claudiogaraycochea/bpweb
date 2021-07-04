@@ -1,0 +1,39 @@
+
+[class^="icon-"],
+[class*=" icon-"],
+[class^="button-"],
+[class*=" button-"] {
+	vertical-align: middle;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 32px;
+	height: 32px;
+}
+
+.avatar {
+	border-radius: 50%;
+	background-size: cover;
+	background-position: center;
+	width: 32px;
+	height: 32px;
+}
+
+[class^="icon-"].small,
+[class*=" icon-"].small,
+.avatar.small {
+	width: 24px;
+	height: 24px;
+}
+
+[class^="icon-"].large,
+[class*=" icon-"].large,
+.avatar.large {
+	width: 128px;
+	height: 128px;
+}
+
+[class^="icon-"].space,
+[class*=" icon-"].space {
+	margin-right: 5px;
+}
