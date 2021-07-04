@@ -1,9 +1,12 @@
 import React from 'react';
+import './Texts.css';
 
-function UI() {
+export const H1 = (props: any) => {
+  const { children } = props;
+
   return (
-    <div className="ui">
-      UI
-    </div>
+    <h1>
+      {children}
+    </h1>
   );
-}
+};
