@@ -3,19 +3,21 @@
 import IRoute from '../models/route';
 
 import Home from '../pages/public/home/Home';
+import ErrorPage from '../pages/public/errorPage/ErrorPage';
 import About from '../pages/private/about/About';
 import Login from '../pages/auth/login/Login';
 
 import StyleGuide from '../ui/styleGuide/StyleGuide';
 
 import Dashboard from '../pages/private/dashboard/Dashboard';
+import Realtime from '../pages/private/realtime/Realtime';
 
 // import MovieDetail from '../containers/movie/detail/MovieDetailContainer';
 // import StyleGuide from '../rakutenUI/styleGuide/StyleGuide';
 
 /* Layouts */
-import PublicLayout from '../layouts/PublicLayout';
-import PrivateLayout from '../layouts/PrivateLayout';
+import PublicLayout from '../layouts/publicLayout/PublicLayout';
+import PrivateLayout from '../layouts/privateLayout/PrivateLayout';
 import DashboardLayout from '../layouts/dashboardLayout/DashboardLayout';
 
 export const routes: IRoute[] = [
@@ -48,10 +50,17 @@ export const routes: IRoute[] = [
     exact: true
   },
   {
+    path: '/realtime',
+    name: 'Realtime',
+    component: Realtime,
+    layout: DashboardLayout,
+    exact: true
+  },
+  {
     path: '/dashboard',
     name: 'Dashboard',
     component: Dashboard,
-    layout: PrivateLayout,
+    layout: DashboardLayout,
     exact: true
   },
   {

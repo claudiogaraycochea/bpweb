@@ -13,7 +13,13 @@ function Header() {
           <Link to='/'>Home</Link>
         </div>
         <div className='item'>
+          <Link to='/dashboard'>Dashboard</Link>
+        </div>
+        <div className='item'>
           <Link to='/realtime'>Realtime</Link>
+        </div>
+        <div className='item'>
+          <Link to='/style'>Style Guide</Link>
         </div>
         <div className='item'>
           <Link to='/logout'>Logout</Link>

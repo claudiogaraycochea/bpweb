@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter, Route, Switch, RouteComponentProps } from 'react-router-dom';
 import routes from '../routes/Routes';
+import ErrorPage from '../pages/public/errorPage/ErrorPage';
 
 const Application: React.FunctionComponent<{}> = props => {
   useEffect(() => {
@@ -29,6 +30,7 @@ const Application: React.FunctionComponent<{}> = props => {
               />
             );
           })}
+          <Route component={ErrorPage} />
         </Switch>
       </BrowserRouter>
     </div>

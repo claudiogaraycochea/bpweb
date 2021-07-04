@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../components/header/Header';
-import Footer from '../components/footer/Footer';
-import { Container } from '../ui/ui';
+import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
+import { Container } from '../../ui/ui';
 
 function PrivateLayout(props: any) {
   return (

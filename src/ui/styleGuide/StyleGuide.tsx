@@ -5,7 +5,7 @@ import { Container, Icon, Color } from '../ui';
 
 function StyleGuide() {
   return (
-    <Container container='container-fluid'>
+    <div>
       <h1>
         <Icon icon='IconUser' color={Color.primary} size='medium'/> 
         <Icon icon='IconLogout' color={Color.primary} size='medium'/> 
@@ -50,7 +50,7 @@ function StyleGuide() {
       <Link to='/login'>
         <Button>Login</Button>
       </Link>
-    </Container>
+    </div>
   );
 }
 
