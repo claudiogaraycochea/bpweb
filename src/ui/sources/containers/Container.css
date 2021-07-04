@@ -1,9 +1,10 @@
-.container {
-  border: 1px solid blue;
-  min-height: calc(100vh - 60px);
+.container, .container-fluid {
+  min-height: calc(100vh - 100px);
   overflow: auto;
   margin-top: 60px;
 }
+/*
 .container-fluid {
+  min-height: calc(100vh - 60px);
   margin-top: 60px;
-}
+}*/
