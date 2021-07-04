@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';
+import './SideMenu.css';
 
-function Header() {
+function SideMenu() {
   return (
-    <div className='header'>
+    <div className='side-menu'>
       <div className='logo-wrapper'>
         <i className='logo'></i>
       </div>
@@ -23,4 +23,4 @@ function Header() {
   );
 }
 
-export default Header
+export default SideMenu

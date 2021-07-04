@@ -2,16 +2,30 @@
 // import ErrorPage from '../containers/errorPage/ErrorPage';
 import IRoute from '../models/route';
 
-import Home from '../pages/private/home/Home';
+import Home from '../pages/public/home/Home';
 import About from '../pages/private/about/About';
+import Login from '../pages/auth/login/Login';
+
+import StyleGuide from '../ui/styleGuide/StyleGuide';
+
+import Dashboard from '../pages/private/dashboard/Dashboard';
 
 // import MovieDetail from '../containers/movie/detail/MovieDetailContainer';
 // import StyleGuide from '../rakutenUI/styleGuide/StyleGuide';
 
 /* Layouts */
 import PublicLayout from '../layouts/PublicLayout';
+import PrivateLayout from '../layouts/PrivateLayout';
+import DashboardLayout from '../layouts/dashboardLayout/DashboardLayout';
 
 export const routes: IRoute[] = [
+  {
+    path: '/style',
+    name: 'StyleGuide',
+    component: StyleGuide,
+    layout: DashboardLayout,
+    exact: true
+  },
   {
     path: '/',
     name: 'Home Page',
@@ -30,6 +44,20 @@ export const routes: IRoute[] = [
     path: '/about/:number',
     name: 'About Page',
     component: About,
+    layout: PublicLayout,
+    exact: true
+  },
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: Dashboard,
+    layout: PrivateLayout,
+    exact: true
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: Login,
     layout: PublicLayout,
     exact: true
   },
