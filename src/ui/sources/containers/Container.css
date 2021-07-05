@@ -3,3 +3,33 @@
   overflow: auto;
   padding: 40px;
 }
+
+.section {
+  border: 1px solid red;
+  margin-bottom: 20px;
+}
+
+.row {
+  display: flex;
+	padding-bottom: 20px;
+}
+
+.min-bottom.row {
+	padding-bottom: 10px;
+}
+
+.none-bottom.row {
+	padding-bottom: 0;
+}
+
+.row [class^="col"] {
+  border: 1px solid red;
+  display: flex;
+  flex: 1;
+}
+
+.row [class^="col"].space-bottom,
+.row [class*=" col"].space-bottom {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
