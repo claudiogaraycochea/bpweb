@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button, Row, Col } from 'react-bootstrap';
-import { Container, Icon, Color } from '../ui';
+// import { Button, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Icon, Color } from '../ui';
 
 function StyleGuide() {
   return (
@@ -12,7 +12,10 @@ function StyleGuide() {
       <h3>Heading 3</h3>
       <Row>
         <Col>Test</Col>
-        <Col><Icon icon='IconUser' color={Color.primary} size='medium'/><Icon icon='IconLogout' color={Color.primary} size='medium'/>  </Col>
+      </Row>
+      <Row>
+        <Col><Icon icon='IconUser' color={Color.primary} size='medium'/><Icon icon='IconLogout' color={Color.primary} size='medium'/></Col>
+        <Col><Icon icon='IconUser' color={Color.primary} size='medium'/><Icon icon='IconLogout' color={Color.primary} size='medium'/></Col>
       </Row>
       
 
@@ -52,7 +55,7 @@ function StyleGuide() {
       <h1>Test</h1>
       <h1>Test</h1>
       <Link to='/login'>
-        <Button>Login</Button>
+        <button>Login</button>
       </Link>
     </div>
   );

@@ -5,9 +5,5 @@
 
 .dashboard-layout .main-wrapper {
   flex: 1;
-  margin-left: 280px;
-}
-.dashboard-layout .header {
-  left: 280px;
-  right: 0; 
+  flex-direction: column;
 }
