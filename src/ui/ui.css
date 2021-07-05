@@ -5,6 +5,10 @@ body, html {
   font-family: 'Poppins', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* Scroll */
 
 ::-webkit-scrollbar {
@@ -26,16 +30,16 @@ body, html {
 
 ::-webkit-scrollbar-track {
   border-radius: 10px;
-  background-color: #353535;
+  background-color: #e6e6e6;
 }
 
-a:hover {
+a {
+  color: #298dff;
   text-decoration: none;
 }
 
-.container, .container-fluid {
-  margin-top: 60px;
-  padding: 40px;
+a:hover {
+  color: blue;
 }
 
 /* Medium devices (tablets, 768px and up) */
