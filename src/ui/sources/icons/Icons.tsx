@@ -23,7 +23,7 @@ export default function Icon(props: any) {
     return 80;
   }
 
-  const propColor = (props.color) ? props.color : Color.primary;
+  const propColor = (props.color) ? props.color : Color.text;
   const propSize = getSize(props.size);
 
   const data = {

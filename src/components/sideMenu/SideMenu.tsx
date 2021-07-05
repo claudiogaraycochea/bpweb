@@ -12,19 +12,19 @@ function SideMenu() {
       <div className='menu'>
         <div className='item'>
           <Link to='/' className='menu-icon-link'>
-            <div className='icon'><Icon icon='IconUser' color={Color.white} size='small'/></div> 
+            <div className='icon'><Icon icon='IconUser' size='small'/></div> 
             <div className='content'>Home</div>
           </Link>
         </div>
         <div className='item'>
           <Link to='/realtime' className='menu-icon-link'>
-            <div className='icon'><Icon icon='IconUser' color={Color.white} size='small'/></div> 
+            <div className='icon'><Icon icon='IconUser' size='small'/></div> 
             <div className='content'>Realtime</div>
           </Link>
         </div>
         <div className='item'>
           <Link to='/logout' className='menu-icon-link'>
-            <div className='icon'><Icon icon='IconUser' color={Color.white} size='small'/></div> 
+            <div className='icon'><Icon icon='IconUser' size='small'/></div> 
             <div className='content'>Style Guide</div>
           </Link>
         </div>

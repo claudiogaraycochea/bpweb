@@ -6,7 +6,7 @@ const Color = {
   accent: '#ffffff',
   highlight: '#FF144D',
   contrast: '#222222',
-  primary: '#A915CE', // violet
+  primary: '#35C7A6', // violet
   secondary: 'red',
   normal: '#ffffff',
   grayHighlight: '#E5E5E5',

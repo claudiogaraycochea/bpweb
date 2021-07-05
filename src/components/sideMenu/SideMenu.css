@@ -1,11 +1,24 @@
 .side-menu {
+  /*background-image: url('../../assets/img/bg-side-menu.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: initial;*/
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 320px;
+  height: 80vh;
   padding: 10px 20px;
-  background-color: #222222;
-  /*position: fixed;
-  height: 100%;*/
+  background-color: #EEF4FE;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 0;
+}
+
+.side-menu .logo-wrapper {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 40px;
 }
 
 .side-menu .logo {
@@ -16,8 +29,6 @@
   display: block;
   width: 100%;
   height: 38px;
-  margin-top: 20px;
-  margin-bottom: 100px;
 }
 
 .side-menu .menu {
@@ -35,9 +46,9 @@
 }
 
 .side-menu a.menu-icon-link {
-  color: #ffffff;
+  color: #303133;
   font-size: 18px;
-  padding: 20px 20px;
+  padding: 20px 40px;
 }
 
 .side-menu a.menu-icon-link:hover {
