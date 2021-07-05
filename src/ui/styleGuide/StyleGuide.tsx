@@ -9,7 +9,12 @@ function StyleGuide() {
       <h1>Style Guide</h1>
       <Section>
         <Row>
-          <Col>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </Col>
+          <Col>Diseno experimental basado en UX neuroscience, la misma se enfoca a reducir la carga cerebral con experiencias previas del usuario. Entre los puntos se encuentran repeticion de ubicacion de elementos principales, botones curvos distencion, colores calidos, y menu simple y basico de acuerdo a cada necesidad.</Col>
+        </Row>
+        <Row>
+          <Col>Aprende</Col>
+          <Col>Asimila</Col>
+          <Col>Aplica automaticamente</Col>
         </Row>
         <Row>
           <Col><Icon icon='IconUser' color={Color.primary} size='medium'/> IconUser</Col>
