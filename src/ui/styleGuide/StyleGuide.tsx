@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // import { Button, Row, Col } from 'react-bootstrap';
-import { Container, Section, Row, Col, Icon, Color, Button, Notification } from '../ui';
+import { Container, Section, Row, Col, Icon, Color, Button, Notification, Input } from '../ui';
 
 function StyleGuide() {
   return (
@@ -40,6 +40,22 @@ function StyleGuide() {
           <Link to='/login'>
             <Button color='primary' size='large'>Large</Button>
           </Link>
+        </Row>
+      </Section>
+      <Section>
+        <Row>
+          <h2>Inputs</h2>
+        </Row>
+        <Row>
+          <Col>
+            <Input size='small' />
+          </Col>
+          <Col>
+            <Input />
+          </Col>
+          <Col>
+            <Input size='large' />
+          </Col>
         </Row>
       </Section>
       <Section>

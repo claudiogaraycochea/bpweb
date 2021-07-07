@@ -5,6 +5,7 @@ import Icon from './sources/icons/Icons';
 import Color from './sources/colors/Colors';
 import { H1 } from './sources/texts/Texts';
 import { Notification } from './sources/notifications/Notifications';
+import { Input } from './sources/inputs/Inputs';
 
 export {
   Container,
@@ -17,4 +18,5 @@ export {
   Color,
   H1,
   Notification,
+  Input,
 }
