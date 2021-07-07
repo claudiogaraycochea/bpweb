@@ -1,9 +1,18 @@
 import React from 'react';
+import './Notification.css';
+import Color from '../colors/Colors';
 
-function UI() {
+export const Notification = (props: any) => {
+
+  const propType = (props.type) ? props.type : '';
+
+  const data = {
+    type: propType
+  }
+
   return (
-    <div className="ui">
-      UI
+    <div className={`notification ${data.type}`}>
+      {props.children}
     </div>
   );
 }
