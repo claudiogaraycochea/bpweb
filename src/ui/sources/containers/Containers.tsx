@@ -59,16 +59,18 @@ export const Section = (props: any) => {
       justifyContent,
       children,
     } = props;
-    const styles = {
+    /*const styles = {
       height: (size) ? `${size}%` : null,
       backgroundImage: `url(${backgroundImage})`,
       alignItems: (alignItems) ? `${alignItems}` : null,
       flex: 1,
       justifyContent: (justifyContent) ? `${justifyContent}` : null,
-    }
+    }*/
+    const propSize = (props.size) ? `w-${props.size}` : '';
+    
     return (
       <div
-        className='col'
+        className={`col ${propSize}`}
         //style={styles}
       >
         {children}

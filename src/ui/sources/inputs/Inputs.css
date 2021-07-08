@@ -1,4 +1,9 @@
 
+.inp-wrapper {
+  width: 100%;
+  padding-right: 20px;
+}
+
 .inp {
   background-color: #FFFFFF;
   border: 2px solid #dee2e6;
@@ -8,6 +13,7 @@
   border-radius: 5px;
   margin-right: 5px;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -47,4 +53,12 @@
 
 .inp-w100 {
 	width: 100%;
+}
+
+.inp-label {
+  /* border: 1px solid red; */
+}
+
+.inp-notification {
+  font-size: 12px;
 }

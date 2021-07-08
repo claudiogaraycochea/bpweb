@@ -14,10 +14,10 @@ export const Input = (props: any) => {
   }
 
   return (
-    <div>
-      <div>Label</div>
+    <div className='inp-wrapper'>
+      <div className='inp-label'>Label</div>
       <input className={`inp ${propColor} ${propSize}`} />
-      <div>Error message</div>
+      <div className='inp-notification'>Error message</div>
     </div>
   );
 }
