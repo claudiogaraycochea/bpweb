@@ -16,7 +16,71 @@
   background-color: #FFFFFF;
   width: 100%;
   max-width: 780px;
-  border-radius: 20px;
+  border-radius: 10px;
+}
+
+.modal-wrapper.start-animation {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: .2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.modal-box.start-animation {
+  opacity:1;
+    z-index:2;
+  animation: show .3s;
+  
+transform: scale(1);
+
+}
+
+@keyframes show {
+  from {
+    transform: scale(0);
+    opacity:0;
+    z-index:-1;       
+  } to {
+    transform: scale(1);
+    opacity: 1;
+    z-index:2;
+  }
+
+  from {
+    transform: translateY(200px);
+  } to {
+    transform: translateY(0);
+  }
+  
+}
+
+.end-animation {
+  z-index:-1;
+  opacity:0;
+  animation: hide .25s;
+  transform: scale(0);
+}
+
+@keyframes hide {
+  from{
+      z-index:2;
+  transform: scale(1);
+    opacity:1;
+  } to{
+      z-index:-1;
+  transform: scale(0);
+    opacity: 0;
+  }
 }
 
 .modal-header {
@@ -24,7 +88,7 @@
 }
 
 .modal-container {
-  padding: 20px;
+  padding: 40px;
 }
 
 .modal-content {
