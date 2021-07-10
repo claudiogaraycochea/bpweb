@@ -18,13 +18,13 @@ function SideMenu() {
         </div>
         <div className='item'>
           <Link to='/realtime' className='menu-icon-link'>
-            <div className='icon'><Icon icon='IconUser' size='small'/></div> 
+            <div className='icon'><Icon icon='IconRealtime' size='small'/></div> 
             <div className='content'>Realtime</div>
           </Link>
         </div>
         <div className='item'>
-          <Link to='/logout' className='menu-icon-link'>
-            <div className='icon'><Icon icon='IconUser' size='small'/></div> 
+          <Link to='/style' className='menu-icon-link'>
+            <div className='icon'><Icon icon='IconStyleGuide' size='small'/></div> 
             <div className='content'>Style Guide</div>
           </Link>
         </div>

@@ -38,6 +38,15 @@ a:last-child, .btn:last-child {
   font-size: 18px;  
 }
 
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0.255);
+  border: 1px solid rgba(0, 0, 0, 0.255);
+  color: #000000;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  /*opacity: .2;*/
+}
+
 /*.btn:last-child, a .btn:last-child{
 	margin-right: 0 !important;
 }*/
@@ -52,6 +61,14 @@ a:last-child, .btn:last-child {
 	background-color: #E5E5E5;
 	border-color: #E5E5E5;
 	color: #85A2BB;
+}
+
+.btn.primary:hover {
+	background-color: #29364b;
+	border: 1px solid #29364b;
+	color: #FFFFFF;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .btn-w100 {

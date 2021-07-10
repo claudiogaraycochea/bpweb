@@ -3,6 +3,8 @@ import IconUser from './IconUser';
 import IconLogout from './IconLogout';
 import IconClose from './IconClose';
 import Color from '../colors/Colors';
+import IconRealtime from './IconRealtime';
+import IconStyleGuide from './IconStyleGuide';
 
 export default function Icon(props: any) {
 
@@ -41,6 +43,12 @@ export default function Icon(props: any) {
       break;
     case 'IconLogout':
       return <IconLogout {...data} />
+      break;
+    case 'IconRealtime':
+      return <IconRealtime {...data} />
+      break;
+    case 'IconStyleGuide':
+      return <IconStyleGuide {...data} />
       break;
     default:
       return <IconUser {...data} />
