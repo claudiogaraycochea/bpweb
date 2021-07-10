@@ -5,6 +5,7 @@ import IconClose from './IconClose';
 import Color from '../colors/Colors';
 import IconRealtime from './IconRealtime';
 import IconStyleGuide from './IconStyleGuide';
+import IconMenu from './IconMenu';
 
 export default function Icon(props: any) {
 
@@ -49,6 +50,9 @@ export default function Icon(props: any) {
       break;
     case 'IconStyleGuide':
       return <IconStyleGuide {...data} />
+      break;
+    case 'IconMenu':
+      return <IconMenu {...data} />
       break;
     default:
       return <IconUser {...data} />

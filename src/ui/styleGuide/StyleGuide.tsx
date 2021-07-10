@@ -108,8 +108,11 @@ function StyleGuide() {
           <h2>Icons</h2>
         </Row>
         <Row>
-          <Col><Icon icon='IconUser' color={Color.primary} size='medium' /></Col>
-          <Col><Icon icon='IconLogout' color={Color.primary} size='medium' /></Col>
+          <Col>
+            <Icon icon='IconUser' color={Color.primary} size='small' />
+            <Icon icon='IconUser' color={Color.primary} size='medium' />
+            <Icon icon='IconUser' color={Color.primary} size='large' />
+          </Col>
         </Row>
       </Section>
       <Section>
