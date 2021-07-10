@@ -1,6 +1,7 @@
 import React from 'react';
 import IconUser from './IconUser';
 import IconLogout from './IconLogout';
+import IconClose from './IconClose';
 import Color from '../colors/Colors';
 
 export default function Icon(props: any) {
@@ -32,6 +33,9 @@ export default function Icon(props: any) {
   }
 
   switch (props.icon) {
+    case 'IconClose':
+      return <IconClose {...data} />
+      break;
     case 'IconUser':
       return <IconUser {...data} />
       break;

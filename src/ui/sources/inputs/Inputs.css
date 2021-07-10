@@ -2,6 +2,7 @@
 .inp-wrapper {
   width: 100%;
   padding-right: 20px;
+  position: relative;
 }
 
 .inp {
@@ -61,4 +62,30 @@
 
 .inp-notification {
   font-size: 12px;
+  color: red;
+  position: absolute;
+}
+
+.inp-check-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.inp-check-wrapper .inp.small {
+  width: 2px;
+  height: 32px; 
+}
+
+.inp-check-wrapper .inp {
+  width: 24px;
+  height: 24px; 
+}
+
+.inp-check-wrapper .inp-label {
+  margin-left: 10px;
+}
+
+.inp-check-wrapper .inp.inp.large {
+  width: 60px;
+  height: 60px; 
 }

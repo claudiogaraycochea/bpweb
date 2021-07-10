@@ -18,11 +18,11 @@
   font-size: 16px;
 }
 
-a {
+a, .btn {
 	margin-right: 10px;
 }
 
-a:last-child{
+a:last-child, .btn:last-child {
 	margin-right: 0 !important;
 }
 

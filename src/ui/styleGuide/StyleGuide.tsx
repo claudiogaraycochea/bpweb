@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { Component, useState } from 'react';
 import { Link } from 'react-router-dom';
 // import { Button, Row, Col } from 'react-bootstrap';
-import { Container, Section, Row, Col, Box, Icon, Color, Button, Notification, Input } from '../ui';
+import { Container, Section, Row, Col, Box, Icon, Color, Button, Notification, Input, InputCheck, InputRadio, Modal } from '../ui';
+import ExampleModal from './exampleModal/ExampleModal';
+
+type IComponent = React.FC<{}>;
 
 function StyleGuide() {
+  const [componentModal, setComponentModal] = useState<any|undefined>(undefined);
+
+  function openModalEditPassword() {
+    console.log('Open Modal');
+    const comp:any = <ExampleModal handleClose={handleClose}/>;
+    setComponentModal(comp)
+  }
+
+  function handleClose() {
+    setComponentModal()
+  }
+
   return (
     <div>
       <Section>
@@ -67,13 +82,24 @@ function StyleGuide() {
         </Row>
         <Row>
           <Col>
-            <Input size='small' />
+            <Input size='small' label='Firstname' error='Error message'/>
           </Col>
           <Col>
-            <Input />
+            <Input label='Firstname' error='Error message'/>
           </Col>
           <Col>
-            <Input size='large' />
+            <Input size='large' label='Firstname' error='Error message'/>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <InputCheck />
+          </Col>
+          <Col>
+            <InputRadio />
+          </Col>
+          <Col>
+            <InputRadio />
           </Col>
         </Row>
       </Section>
@@ -100,7 +126,19 @@ function StyleGuide() {
           <Notification type="danger">Lorem ipsum dolor sit amet, consec tetur adipiscing elit.</Notification>
         </Row>
       </Section>
-
+      <Section>
+        <Row>
+          <Col>
+            <h2>Modals</h2>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Button size='large' onClick={() => openModalEditPassword()}>Open Modal</Button>
+          </Col>
+        </Row>
+      </Section>
+      <Modal handleClose={handleClose} component={componentModal}/>
     </div>
   );
 }

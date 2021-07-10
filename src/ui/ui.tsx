@@ -5,7 +5,8 @@ import Icon from './sources/icons/Icons';
 import Color from './sources/colors/Colors';
 import { H1 } from './sources/texts/Texts';
 import { Notification } from './sources/notifications/Notifications';
-import { Input } from './sources/inputs/Inputs';
+import { Input, InputCheck, InputRadio } from './sources/inputs/Inputs';
+import { Modal } from './sources/modals/Modals';
 
 export {
   Container,
@@ -19,4 +20,7 @@ export {
   H1,
   Notification,
   Input,
+  InputCheck,
+  InputRadio,
+  Modal,
 }

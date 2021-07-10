@@ -3,10 +3,9 @@ import './Button.css';
 import Color from '../colors/Colors';
 
 export const Button = (props: any) => {
-
+  const { children } = props;
   const propColor = (props.color) ? props.color : '';
   const propSize = (props.size) ? props.size : '';
-  console.log('>>>>>>>>Button: props: ', props.color);
 
   const data = {
     color: propColor,
@@ -14,8 +13,8 @@ export const Button = (props: any) => {
   }
 
   return (
-    <button className={`btn ${propColor} ${propSize}`}>
-      Button text
+    <button className={`btn ${propColor} ${propSize}`} onClick={props.onClick}>
+      {children}
     </button>
   );
 }
