@@ -63,7 +63,7 @@
 .inp-notification {
   font-size: 12px;
   color: red;
-  position: absolute;
+  position: relative;
 }
 
 .inp-check-wrapper {
@@ -88,4 +88,9 @@
 .inp-check-wrapper .inp.inp.large {
   width: 60px;
   height: 60px; 
+}
+@media (min-width: 768px) {
+  .inp-notification {
+    position: absolute;
+  }
 }

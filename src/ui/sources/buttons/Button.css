@@ -19,11 +19,16 @@
 }
 
 a, .btn {
+  display: flex;
 	margin-right: 10px;
 }
 
 a:last-child, .btn:last-child {
 	margin-right: 0 !important;
+}
+
+.container .btn, .container-fluid .btn {
+  margin-bottom: 10px;
 }
 
 .btn.small {
@@ -73,4 +78,10 @@ a:last-child, .btn:last-child {
 
 .btn-w100 {
 	width: 100%;
+}
+
+@media (min-width: 768px) {
+  .btn {
+    margin-bottom: 0;
+  }
 }

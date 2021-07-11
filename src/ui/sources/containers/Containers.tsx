@@ -16,20 +16,16 @@ export const Container = (props: any) => {
 
 export const Section = (props: any) => {
     const {
-      size,
       className,
-      backgroundImage,
-      alignItems,
-      justifyContent,
       children,
     } = props;
-    const styles = {
+    /*const styles = {
       height: (size) ? `${size}%` : null,
       backgroundImage: `url(${backgroundImage})`,
       alignItems: (alignItems) ? `${alignItems}` : null,
       flex: 1,
       justifyContent: (justifyContent) ? `${justifyContent}` : null,
-    }
+    }*/
     return (
       <div
         className={`section ${className}`}
@@ -46,7 +42,7 @@ export const Section = (props: any) => {
       <div
         className='row'
       >
-        {props.children}
+        {children}
       </div>
     );
   };
@@ -54,9 +50,9 @@ export const Section = (props: any) => {
   export const Col = (props: any) => {
     const {
       size,
-      backgroundImage,
-      alignItems,
-      justifyContent,
+      // backgroundImage,
+      // alignItems,
+      // justifyContent,
       children,
     } = props;
     /*const styles = {
@@ -66,7 +62,7 @@ export const Section = (props: any) => {
       flex: 1,
       justifyContent: (justifyContent) ? `${justifyContent}` : null,
     }*/
-    const propSize = (props.size) ? `w-${props.size}` : '';
+    const propSize = (size) ? `w-${size}` : '';
     
     return (
       <div
@@ -80,12 +76,12 @@ export const Section = (props: any) => {
   
   export const Box = (props: any) => {
     const {
-      width,
-      height,
+      //width,
+      // height,
       className,
-      backgroundImage,
-      alignItems,
-      justifyContent,
+      //backgroundImage,
+      //alignItems,
+      //justifyContent,
       children,
     } = props;
     /*const styles = {

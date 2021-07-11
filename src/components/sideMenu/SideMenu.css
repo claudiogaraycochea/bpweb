@@ -10,15 +10,23 @@
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 0;
   position: fixed;
+  animation: animationLeft .2s;
+}
+
+@keyframes animationLeft {
+  from {
+    transform: translateX(-200px);
+  } to {
+    transform: translateX(0);
+  }
 }
 
 .side-menu-btn {
   position: absolute;
 }
 
-.side-menu-btn-close button {
+.side-menu-btn-close {
   background-color: transparent;
-  border: 0px solid;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -28,12 +36,21 @@
   position: absolute;
 }
 
-.side-menu-btn-open button {
+.side-menu-btn-open {
   background-color: transparent;
   border: 0px solid;
   position: fixed;
-  right: 10px;
-  top: 20px;
+  left: 20px;
+  top: 14px;
+}
+
+.side-menu-btn-close:hover,
+.side-menu-btn-close:active,
+.side-menu-btn-close:focus,
+.side-menu-btn-open:hover,
+.side-menu-btn-open:active,
+.side-menu-btn-open:focus {
+  background-color: transparent;
 }
 
 .side-menu.false {
@@ -94,7 +111,7 @@
   from {
     transform: scale(0);
     opacity:0;
-    z-index:-1;       
+    z-index:-1;
   } to {
     transform: scale(1);
     opacity: 1;
@@ -105,17 +122,13 @@
 /* Medium devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-  body {
-    font-size: 16px;
-    border: 1px solid red;
-  }
 
   .side-menu {
     position: relative;
     width: 320px;
   }
 
-  .side-menu-btn-close button {
+  .side-menu-btn-close {
     display: none;
   }
 

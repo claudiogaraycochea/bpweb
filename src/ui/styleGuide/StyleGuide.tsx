@@ -76,6 +76,7 @@ function StyleGuide() {
           </Link>
         </Row>
       </Section>
+      
       <Section>
         <Row>
           <h2>Inputs</h2>

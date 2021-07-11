@@ -1,19 +1,20 @@
 .header {
-  display: none;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
-  padding: 10px 40px;
+  padding: 0 20px;
   height: 60px;
   border-bottom: 1px solid #dee2e6;
 }
 
 .header .title {
   font-weight: bold;
+  margin-left: 40px;
 }
 
 .header .menu {
-  display: flex;
+  /* display: none; */
   align-items: center;
 }
 
@@ -22,7 +23,12 @@
 }
 
 @media (min-width: 768px) {
-  .header {
+
+  .header .menu {
     display: flex;
+  }
+
+  .header .title {
+    margin-left: 0;
   }
 }

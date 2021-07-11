@@ -1,17 +1,16 @@
 import React from 'react';
 import './Inputs.css';
-import Color from '../colors/Colors';
+// import Color from '../colors/Colors';
 
 export const Input = (props: any) => {
 
   const propColor = (props.color) ? props.color : '';
   const propSize = (props.size) ? props.size : '';
-  console.log('>>>>>>>>Button: props: ', props.color);
 
-  const data = {
+  /*const data = {
     color: propColor,
     size: propSize
-  }
+  }*/
 
   return (
     <div className='inp-wrapper'>
@@ -26,12 +25,12 @@ export const InputCheck = (props: any) => {
 
   const propColor = (props.color) ? props.color : '';
   const propSize = (props.size) ? props.size : '';
-  console.log('>>>>>>>>Button: props: ', props.color);
+  //console.log('>>>>>>>>Button: props: ', props.color);
 
-  const data = {
+  /*const data = {
     color: propColor,
     size: propSize
-  }
+  }*/
 
   return (
     <div className='inp-check-wrapper'>
@@ -45,12 +44,12 @@ export const InputRadio = (props: any) => {
 
   const propColor = (props.color) ? props.color : '';
   const propSize = (props.size) ? props.size : '';
-  console.log('>>>>>>>>Button: props: ', props.color);
+  // console.log('>>>>>>>>Button: props: ', props.color);
 
-  const data = {
+  /*const data = {
     color: propColor,
     size: propSize
-  }
+  }*/
 
   return (
     <div className='inp-check-wrapper'>

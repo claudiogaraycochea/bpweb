@@ -1,6 +1,6 @@
 import React from 'react';
 import './Notification.css';
-import Color from '../colors/Colors';
+// import Color from '../colors/Colors';
 
 export const Notification = (props: any) => {
 

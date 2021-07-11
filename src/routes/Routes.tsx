@@ -3,7 +3,6 @@
 import IRoute from '../models/route';
 
 import Home from '../pages/public/home/Home';
-import ErrorPage from '../pages/public/errorPage/ErrorPage';
 import About from '../pages/private/about/About';
 import Login from '../pages/auth/login/Login';
 
@@ -17,7 +16,7 @@ import Realtime from '../pages/private/realtime/Realtime';
 
 /* Layouts */
 import PublicLayout from '../layouts/publicLayout/PublicLayout';
-import PrivateLayout from '../layouts/privateLayout/PrivateLayout';
+// import PrivateLayout from '../layouts/privateLayout/PrivateLayout';
 import DashboardLayout from '../layouts/dashboardLayout/DashboardLayout';
 
 export const routes: IRoute[] = [

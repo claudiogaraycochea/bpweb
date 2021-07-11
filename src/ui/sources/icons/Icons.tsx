@@ -2,26 +2,26 @@ import React from 'react';
 import IconUser from './IconUser';
 import IconLogout from './IconLogout';
 import IconClose from './IconClose';
-import Color from '../colors/Colors';
 import IconRealtime from './IconRealtime';
 import IconStyleGuide from './IconStyleGuide';
 import IconMenu from './IconMenu';
+import IconNextPlayLink from './IconNextPlayLink';
 
 export default function Icon(props: any) {
 
   const getSize = (key: string) => {
     switch (key) {
       case 'small':
-        return 24
+        return 24;
         break;
       case 'medium':
-        return 48
+        return 48;
         break;
       case 'large':
-        return 128
+        return 128;
         break;
       default:
-        return 32 // normal size
+        return 32; // normal size
         break;
     }
     return 80;
@@ -53,6 +53,9 @@ export default function Icon(props: any) {
       break;
     case 'IconMenu':
       return <IconMenu {...data} />
+      break;
+    case 'IconNextPlayLink':
+      return <IconNextPlayLink {...data} />
       break;
     default:
       return <IconUser {...data} />
