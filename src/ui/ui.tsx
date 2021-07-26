@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Section, Row, Col, Box } from './sources/containers/Containers';
 import { Button } from './sources/buttons/Buttons';
 import Icon from './sources/icons/Icons';

@@ -2,8 +2,8 @@ import React from 'react';
 import './Container.css';
 
 export const Container = (props: any) => {
-  const { children } = props;
-  const propContainer = (props.container) ? props.container : 'container';
+  const { container, children } = props;
+  const propContainer = (container) ? container : 'container';
 
   return (
     <div

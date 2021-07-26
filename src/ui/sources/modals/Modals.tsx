@@ -1,23 +1,24 @@
-import React, { useEffect, useState }from 'react';
+import React, { useEffect }from 'react';
 import './Modals.css';
 import Icon from '../icons/Icons';
 import Color from '../colors/Colors';
 
 export const Modal = (props: any) => {
   const { handleClose, component } = props;
-  const [startAnimation, setStartAnimation] = useState('initial-animation');
+  // const [startAnimation, setStartAnimation] = useState('initial-animation');
+  const startAnimation = '';
 
   useEffect(() => {
     console.log('start');
-    if(startAnimation==='initial-animation') {
+    /*if(startAnimation === 'initial-animation') {
       setStartAnimation('start-animation');
-    }
+    }*/
   });
 
   function handleCloseModal() {
     console.log('end');
     // setStartAnimation('end-animation');
-    props.handleClose();
+    handleClose();
   }
 
   if (component) {

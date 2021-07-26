@@ -56,12 +56,6 @@ function SideMenu() {
       </div>
       <div className='menu'>
         <div className='item'>
-          <Link to='/' className='menu-icon-link'>
-            <div className='icon'><Icon icon='IconUser' size='small' /></div>
-            <div className='content'>Home</div>
-          </Link>
-        </div>
-        <div className='item'>
           <Link to='/realtime' className='menu-icon-link'>
             <div className='icon'><Icon icon='IconRealtime' size='small' /></div>
             <div className='content'>Realtime</div>
@@ -71,6 +65,12 @@ function SideMenu() {
           <Link to='/style' className='menu-icon-link'>
             <div className='icon'><Icon icon='IconStyleGuide' size='small' /></div>
             <div className='content'>Style Guide</div>
+          </Link>
+        </div>
+        <div className='item'>
+          <Link to='/dashboard/crud' className='menu-icon-link'>
+            <div className='icon'><Icon icon='IconRealtime' size='small' /></div>
+            <div className='content'>CRUD</div>
           </Link>
         </div>
       </div>

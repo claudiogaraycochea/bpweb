@@ -1,10 +1,10 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import { Button, Row, Col } from 'react-bootstrap';
-import { Container, Section, Row, Col, Box, Icon, Color, Button, Notification, Input, InputCheck, InputRadio, Modal } from '../ui';
+import { Section, Row, Col, Box, Icon, Color, Button, Notification, Input, InputCheck, InputRadio, Modal } from '../ui';
 import ExampleModal from './exampleModal/ExampleModal';
 
-type IComponent = React.FC<{}>;
+// type IComponent = React.FC<{}>;
 
 function StyleGuide() {
   const [componentModal, setComponentModal] = useState<any|undefined>(undefined);

@@ -92,10 +92,6 @@
   font-size: 18px;
   padding: 20px 40px;
 }
-/*
-.side-menu a.menu-icon-link:hover {
-  border-left: 4px solid #35C7A6;
-}*/
 
 .side-menu a.menu-icon-link .content {
   margin-left: 10px;
@@ -132,19 +128,7 @@
     display: none;
   }
 
-}
-
-/* Large devices (desktops, 992px and up) */
-
-@media (min-width: 992px) {
-}
-
-/* Extra large devices (smart tv HD, 1200px and up) */
-
-@media (min-width: 1200px) {
-}
-
-/* Ultra large devices (smart tv Full HD, 1200px and up) */
-
-@media (min-width: 1920px) {
+  .side-menu {
+    animation: initial;
+  }
 }

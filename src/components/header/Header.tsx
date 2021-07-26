@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Icon } from '../../ui/ui';
 import './Header.css';
 
 function Header() {
@@ -10,19 +11,10 @@ function Header() {
       </div>
       <div className='menu'>
         <div className='item'>
-          <Link to='/'>Home</Link>
-        </div>
-        <div className='item'>
           <Link to='/dashboard'>Dashboard</Link>
         </div>
         <div className='item'>
-          <Link to='/realtime'>Realtime</Link>
-        </div>
-        <div className='item'>
-          <Link to='/style'>Style Guide</Link>
-        </div>
-        <div className='item'>
-          <Link to='/logout'>Logout</Link>
+          <Link to='/logout'><Icon icon='IconLogout' size='small'/></Link>
         </div>
       </div>
     </div>

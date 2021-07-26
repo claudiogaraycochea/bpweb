@@ -1,0 +1,38 @@
+[
+    {
+        "id": "111111XX",
+        "room": "Sala 1",
+        "name": "Aticco Urquinaona",
+        "available": true
+    },
+    {
+        "id": "222222XX",
+        "room": "Sala 2",
+        "name": "Aticco Med",
+        "available": true
+    },
+    {
+        "id": "333333XX",
+        "room": "Sala 3",
+        "name": "Aticco Tarradellas",
+        "available": true
+    },
+    {
+        "id": "444444XX",
+        "room": "Sala 4",
+        "name": "Aticco Bogatell",
+        "available": true
+    },
+    {
+        "id": "555555XX",
+        "room": "Sala 5",
+        "name": "Aticco Hospitalet",
+        "available": true
+    },
+    {
+        "id": "666666XX",
+        "room": "Sala 6",
+        "name": "Aticco Verdaguer",
+        "available": false
+    }
+]

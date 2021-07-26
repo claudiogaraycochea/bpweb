@@ -3,7 +3,7 @@ import './ExampleModal.css';
 import { Row, Col, Button } from '../../ui';
 
 const ExampleModal = (props: any) => {
-  const { show, handleClose, component } = props;
+  const { handleClose } = props;
 
   return (
     <div>
@@ -20,7 +20,7 @@ const ExampleModal = (props: any) => {
         </div>
       </div>
       <div className='modal-bottom'>
-        <Button onClick={()=>props.handleClose()}>
+        <Button onClick={()=>handleClose()}>
           Cancel
         </Button>
         <Button color='primary'>

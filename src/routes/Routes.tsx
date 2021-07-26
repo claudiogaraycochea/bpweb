@@ -10,6 +10,10 @@ import StyleGuide from '../ui/styleGuide/StyleGuide';
 
 import Dashboard from '../pages/private/dashboard/Dashboard';
 import Realtime from '../pages/private/realtime/Realtime';
+import CrudOverview from '../pages/private/crud/overview/Overview';
+import CrudUpdate from '../pages/private/crud/update/Update';
+
+import ErrorPage from '../pages/public/errorPage/ErrorPage';
 
 // import MovieDetail from '../containers/movie/detail/MovieDetailContainer';
 // import StyleGuide from '../rakutenUI/styleGuide/StyleGuide';
@@ -35,13 +39,6 @@ export const routes: IRoute[] = [
     exact: true
   },
   {
-    path: '/about',
-    name: 'About Page',
-    component: About,
-    layout: PublicLayout,
-    exact: true
-  },
-  {
     path: '/about/:number',
     name: 'About Page',
     component: About,
@@ -63,9 +60,30 @@ export const routes: IRoute[] = [
     exact: true
   },
   {
+    path: '/dashboard/crud',
+    name: 'CrudOverview',
+    component: CrudOverview,
+    layout: DashboardLayout,
+    exact: true
+  },
+  {
+    path: '/dashboard/crud/update/:officeId',
+    name: 'CrudUpdate',
+    component: CrudUpdate,
+    layout: DashboardLayout,
+    exact: true
+  },
+  {
     path: '/login',
     name: 'Login',
     component: Login,
+    layout: PublicLayout,
+    exact: true
+  },
+  {
+    path: '',
+    name: 'Error Page',
+    component: ErrorPage,
     layout: PublicLayout,
     exact: true
   },
