@@ -1,9 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from 'react-bootstrap';
-import { Row, } from '../../../ui/ui';
+import { Row, Box, Button } from '../../../ui/ui';
+import { facebookProvider, googleProvider } from '../../../config/authMethods';
+import socialMediaAuth from '../../../services/auth';
 
 function Home() {
+  const handleOnClick = async (provider) => {
+    const res = await socialMediaAuth(provider);
+    console.log(res);
+  }
+
   return (
     <div className="home">
       <Row>
@@ -31,10 +37,11 @@ function Home() {
           Trash Tracker - Notificar a las personas donde recoger la basura.
         </h1>
       </Row>
-
-      <Link to='/login'>
-        <Button>Login</Button>
-      </Link>
+      <Box type="success">
+          <h2>Create account</h2>
+          <Button color='primary' onClick={()=>handleOnClick(facebookProvider)}>Facebook</Button>
+          <Button color='primary' onClick={()=>handleOnClick(googleProvider)}>Google</Button>
+      </Box>
     </div>
   );
 }
