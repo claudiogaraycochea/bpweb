@@ -13,6 +13,8 @@ import Realtime from '../pages/private/realtime/Realtime';
 import CrudOverview from '../pages/private/crud/overview/Overview';
 import CrudUpdate from '../pages/private/crud/update/Update';
 
+import CrudFirestoreOverview from '../pages/private/crudFirestore/overview/Overview';
+
 import ErrorPage from '../pages/public/errorPage/ErrorPage';
 
 // import MovieDetail from '../containers/movie/detail/MovieDetailContainer';
@@ -70,6 +72,13 @@ export const routes: IRoute[] = [
     path: '/dashboard/crud/update/:officeId',
     name: 'CrudUpdate',
     component: CrudUpdate,
+    layout: DashboardLayout,
+    exact: true
+  },
+  {
+    path: '/dashboard/crud-firestore',
+    name: 'CrudFirestoreOverview',
+    component: CrudFirestoreOverview,
     layout: DashboardLayout,
     exact: true
   },

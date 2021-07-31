@@ -1,0 +1,1 @@
+export const API_URL = 'https://8bsu9rgzfd.execute-api.eu-central-1.amazonaws.com/prod';//process.env.REACT_APP_API_URL;
