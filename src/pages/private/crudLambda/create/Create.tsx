@@ -44,7 +44,7 @@ function CrudLambdaCreate() {
   }
 
   return (
-    <div className="home">
+    <div>
       <Row>
         <h1>
           Crud Lambda Create

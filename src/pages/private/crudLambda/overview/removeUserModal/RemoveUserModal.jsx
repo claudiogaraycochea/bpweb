@@ -1,9 +1,9 @@
 import React from 'react';
-import './ExampleModal.css';
+import './RemoveUserModal.css';
 import { Row, Col, Button } from '../../../../../ui/ui';
 import * as API from '../../../../../store/api/api';
 
-const ExampleModal = (props: any) => {
+const RemoveUserModal = (props: any) => {
   const { handleClose, handleAccept, data } = props;
   const { user } = data;
 
@@ -19,7 +19,7 @@ const ExampleModal = (props: any) => {
   return (
     <div>
       <div className='modal-content'>
-        <div className={`example-modal`}>
+        <div className='remove-user-modal'>
           <Row>
             <h2>Remove modal</h2>
           </Row>
@@ -42,4 +42,4 @@ const ExampleModal = (props: any) => {
   );
 };
 
-export default ExampleModal
+export default RemoveUserModal

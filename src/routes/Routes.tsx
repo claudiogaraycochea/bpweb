@@ -15,6 +15,7 @@ import CrudUpdate from '../pages/private/crud/update/Update';
 
 import CrudLambdaOverview from '../pages/private/crudLambda/overview/Overview';
 import CrudLambdaCreate from '../pages/private/crudLambda/create/Create'
+import CrudLambdaUpdate from '../pages/private/crudLambda/update/Update'
 
 import ErrorPage from '../pages/public/errorPage/ErrorPage';
 
@@ -87,6 +88,13 @@ export const routes: IRoute[] = [
     path: '/dashboard/crud-lambda/create',
     name: 'CrudLambdaCreate',
     component: CrudLambdaCreate,
+    layout: DashboardLayout,
+    exact: true
+  },
+  {
+    path: '/dashboard/crud-lambda/update/:email',
+    name: 'CrudLambdaUpdate',
+    component: CrudLambdaUpdate,
     layout: DashboardLayout,
     exact: true
   },

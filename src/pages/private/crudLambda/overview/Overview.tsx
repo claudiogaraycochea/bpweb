@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col, Button, Modal } from '../../../../ui/ui';
 import * as API from '../../../../store/api/api';
-import ExampleModal from './exampleModal/ExampleModal';
+import RemoveUserModal from './removeUserModal/RemoveUserModal';
 
 function CrudLambdaOverview() {
   const [users, setUsers] = useState();
   const [componentModal, setComponentModal] = useState<any|undefined>(undefined);
 
   function openModalRemove(user) {
-    const comp:any = <ExampleModal handleClose={handleClose} data={{user}} handleAccept={()=>handleAccept()}/>;
+    const comp:any = <RemoveUserModal handleClose={handleClose} data={{user}} handleAccept={()=>handleAccept()}/>;
     setComponentModal(comp);
   }
 
@@ -17,15 +17,15 @@ function CrudLambdaOverview() {
     setComponentModal()
   }
 
-  async function getUser() {
-    return await API.getUser()
+  async function getUsers() {
+    return await API.getUsers()
       .then((resp) => setUsers(resp))
       .catch((error) => null);
   };
 
   useEffect(()=>{
     if(!users) {
-      getUser();
+      getUsers();
     }
   })
 
@@ -35,7 +35,7 @@ function CrudLambdaOverview() {
   }
 
   return (
-    <div className="home">
+    <div>
       <Row>
         <Col>
           <h1>Crud Lambda</h1>
@@ -49,9 +49,11 @@ function CrudLambdaOverview() {
           <Row key={user.id}>
             <Col size='10'>{user.id}</Col>
             <Col size='30'>{user.email}</Col>
-            <Col size='50'>{user.pass}</Col>
+            <Col size='50'>{user.password}</Col>
             <Col size='10'>
-              <Button onClick={()=>openModalRemove(user.id)}>Update</Button>
+              <Link to={`/dashboard/crud-lambda/update/${user.email}`}>
+                <Button>Update</Button>
+              </Link>
             </Col>
             <Col>
               <Button onClick={()=>openModalRemove(user)}>Delete</Button>
