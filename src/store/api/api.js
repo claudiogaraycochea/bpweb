@@ -4,23 +4,46 @@ import { API_URL } from './constants';
 //import { request } from '../../lib/http';
 import { getUserAdapter } from './adapter/user/userAdapter';
 
-export const getUser = () => {
-  const params = {};
-  axios.get(`${API_URL}/user`, params)
+export async function getUser() {
+  return await axios.get(`${API_URL}/user`, null)
     .then((response) => {
-      console.log('response');
       const data = getUserAdapter(response);
-      /* dispatch({
-        type: 'ADD_PHASE',
-        phase: response.data,
-      });*/
+      return data;
     })
     .catch((error) => {
       console.log(error);
-      /*dispatch({
-        type: 'ADD_PHASE_ERROR',
-        errorMessage: error,
-      });*/
+      return null;
     });
 };
 
+
+export async function createUser(data) {
+  const params = {
+    "email": data.email,
+    "password": data.password
+  };
+  return await axios.patch(`${API_URL}/user`, params)
+    .then((response) => {
+      return response;
+    })
+    .catch((error) => {
+      console.log(error);
+      return null;
+    });
+};
+
+export async function removeUser(email) {
+  const params = {
+    data: {
+      email
+    }
+  };
+  return await axios.delete(`${API_URL}/user`, params)
+    .then((response) => {
+      return response;
+    })
+    .catch((error) => {
+      console.log(error);
+      return null;
+    });
+};

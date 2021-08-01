@@ -13,7 +13,8 @@ import Realtime from '../pages/private/realtime/Realtime';
 import CrudOverview from '../pages/private/crud/overview/Overview';
 import CrudUpdate from '../pages/private/crud/update/Update';
 
-import CrudFirestoreOverview from '../pages/private/crudFirestore/overview/Overview';
+import CrudLambdaOverview from '../pages/private/crudLambda/overview/Overview';
+import CrudLambdaCreate from '../pages/private/crudLambda/create/Create'
 
 import ErrorPage from '../pages/public/errorPage/ErrorPage';
 
@@ -76,9 +77,16 @@ export const routes: IRoute[] = [
     exact: true
   },
   {
-    path: '/dashboard/crud-firestore',
-    name: 'CrudFirestoreOverview',
-    component: CrudFirestoreOverview,
+    path: '/dashboard/crud-lambda',
+    name: 'CrudLambdaOverview',
+    component: CrudLambdaOverview,
+    layout: DashboardLayout,
+    exact: true
+  },
+  {
+    path: '/dashboard/crud-lambda/create',
+    name: 'CrudLambdaCreate',
+    component: CrudLambdaCreate,
     layout: DashboardLayout,
     exact: true
   },

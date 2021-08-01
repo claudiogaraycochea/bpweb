@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link,RouteComponentProps } from 'react-router-dom';
-import { Row, Col, Input, Button } from '../../../../ui/ui';
+import { Link } from 'react-router-dom';
+import { Row, Col, Button } from '../../../../ui/ui';
 import { getOffice, setOfficeBooking } from '../../../../store/booking/BookingActions';
 
 function CrudUpdate (props: any) {

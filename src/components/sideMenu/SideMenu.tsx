@@ -74,9 +74,9 @@ function SideMenu() {
           </Link>
         </div>
         <div className='item'>
-          <Link to='/dashboard/crud-firestore' className='menu-icon-link'>
+          <Link to='/dashboard/crud-lambda' className='menu-icon-link'>
             <div className='icon'><Icon icon='IconRealtime' size='small' /></div>
-            <div className='content'>CRUD FIRESTORE</div>
+            <div className='content'>CRUD LAMBDA</div>
           </Link>
         </div>
       </div>

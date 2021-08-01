@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Row, Box, Button } from '../../../ui/ui';
 import { facebookProvider, googleProvider } from '../../../config/authMethods';
 import socialMediaAuth from '../../../services/auth';

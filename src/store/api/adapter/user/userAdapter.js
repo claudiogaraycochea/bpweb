@@ -1,5 +1,4 @@
-export const getUserAdapter = (response) => {
-  console.log('getUserAdapter: ', response);
+export function getUserAdapter(response) {
   const items = response.data.Items.map((user, index)=> {
     return {
       id: index,
@@ -7,6 +6,5 @@ export const getUserAdapter = (response) => {
       pass: user.password
     }
   })
-  console.log('getUserAdapter: items:', items);
-  return response.data.Items;
+  return items;
 }

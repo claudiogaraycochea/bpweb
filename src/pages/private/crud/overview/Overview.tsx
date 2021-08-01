@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Row, Col, Input, Button } from '../../../../ui/ui';
 import { useSelector, useDispatch } from 'react-redux';
@@ -8,7 +8,7 @@ import IOffice from '../../../../models/office';
 function CrudOverview() {
   const { offices } = useSelector((state: any) => state.default.booking)
   const dispatch = useDispatch();
-  const [query, setQuery] = useState();
+  const query = '';
 
   function handleSearchOffices(e: React.ChangeEvent<HTMLInputElement>) {
     const query = e.target.value;
